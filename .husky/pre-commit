@@ -1,0 +1,1 @@
+cd 00-setup/typescript-setup && npm run lint:fix

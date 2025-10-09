@@ -68,11 +68,11 @@ dist
 7. Setup pre commit git hook with husky
 ```
 npm install husky --save-dev
-npx husky init
+npx husky init # adds script prepare in package.json and creates .husky folder
+npm run prepare
 # Update .husky/pre-commit file to have 'npm run lint:fix'
-# You can add similar .husky/pre-push file
 chmod +x .husky/pre-commit
-chmod +x .husky/pre-push
+git commit -m "Test"
 ```
 
 8. Run project with `npm install && npm run build && npm start`
