@@ -1,4 +1,4 @@
 const helloworld = () => {
-    return "Hello world!";
-}
+  return "Hello world!";
+};
 console.log(helloworld());

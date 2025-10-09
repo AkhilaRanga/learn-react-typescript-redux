@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "lint": "eslint . --ext .ts,.js",
-    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "lint": "eslint .  --ignore-pattern dist/ --ignore-pattern node_modules/",
+    "lint:fix": "eslint .  --ignore-pattern dist/ --ignore-pattern node_modules/ --fix",
     "format": "prettier --write \"src/**/*.{ts,js,json,md}\"",
     "prepare": "husky"
   },
@@ -22,7 +22,6 @@
     "eslint": "^9.37.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
-    "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
