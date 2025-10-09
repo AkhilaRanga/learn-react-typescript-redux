@@ -6,9 +6,9 @@
 #### Folder structure
 <pre>
 <code>
-├── .husky/             #setup for all sub folders
+├── .husky/             # setup for all sub folders
 ├── 00-setup/
-├── .gitignore          #setup for all sub folders
+├── .gitignore          # setup for all sub folders
 ├── package.json
 └── README.md
 </code>
@@ -20,7 +20,13 @@
 npm init --yes
 ```
 
-2. Common monorepo style husky hook setup
+2. Common `.gitignore`
+```
+**/node_modules
+**/dist
+```
+
+3. Common monorepo style husky hook setup
 ```
 npm install husky --save-dev
 npx husky init
