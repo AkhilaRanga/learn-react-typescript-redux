@@ -71,6 +71,8 @@ npm install husky --save-dev
 npx husky init
 # Update .husky/pre-commit file to have 'npm run lint:fix'
 # You can add similar .husky/pre-push file
+chmod +x .husky/pre-commit
+chmod +x .husky/pre-push
 ```
 
 8. Run project with `npm install && npm run build && npm start`
